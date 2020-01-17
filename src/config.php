@@ -68,14 +68,19 @@ return [
     //],
 
     //小程序
-    //'mini_program'     => [
-    //    'default' => [
-    //        'app_id'  => env('WECHAT_MINI_PROGRAM_APPID', ''),
-    //        'secret'  => env('WECHAT_MINI_PROGRAM_SECRET', ''),
-    //        'token'   => env('WECHAT_MINI_PROGRAM_TOKEN', ''),
-    //        'aes_key' => env('WECHAT_MINI_PROGRAM_AES_KEY', ''),
-    //    ],
-    //],
+    'mini_program'     => [
+        'default' => [
+//            'app_id'  => env('WECHAT_MINI_PROGRAM_APPID', ''),
+//            'secret'  => env('WECHAT_MINI_PROGRAM_SECRET', ''),
+//            'token'   => env('WECHAT_MINI_PROGRAM_TOKEN', ''),
+//            'aes_key' => env('WECHAT_MINI_PROGRAM_AES_KEY', ''),
+
+            'app_id'  => 'wx523d2d2cbcce80d9',
+            'secret'  => '86ce3973d081a575538185c80b247148',
+            'token'   => '',
+            'aes_key' => '',
+        ],
+    ],
 
     //支付
     //'payment'          => [

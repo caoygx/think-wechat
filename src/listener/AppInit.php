@@ -5,7 +5,7 @@
  * @copyright 2017-2018 耐小心
  */
 
-namespace Naixiaoxin\ThinkWechat\Behavior;
+namespace Naixiaoxin\ThinkWechat\listener;
 
 use EasyWeChat\MiniProgram\Application as MiniProgram;
 use EasyWeChat\OfficialAccount\Application as OfficialAccount;
@@ -36,7 +36,7 @@ class AppInit
      *      app( $module_name, [ app_id => 'test' ])
      */
 
-    public function run()
+    public function handle($event)
     {
         $wechat_default = config('wechat.default') ? config('wechat.default') : [];
         foreach ($this->apps as $name => $app) {
