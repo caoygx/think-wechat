@@ -66,7 +66,7 @@ $officialAccount = Facade::officialAccount('test'); // 公众号
 $officialAccount = Facade::officialAccount('',$config); // 公众号
 ```
 
-### Oauth登录中间件(ThinkPHP5.1.6+)
+### Oauth登录中间件(ThinkPHP6.0+)
 使用中间件情况下，config的oauth.callback可以随便写~，反正是直接获取了当前URL
 ```php
 \think\facade\Route::rule('user','usere')->middleware(\Naixiaoxin\ThinkWechat\Middleware\OauthMiddleware::class);
